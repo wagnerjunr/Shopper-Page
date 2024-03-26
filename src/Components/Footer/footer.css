@@ -1,0 +1,40 @@
+.footer{
+    text-align: center;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contact{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.footer-contact li{
+    margin: 5px;
+}
+.contact img{
+    margin: 20px;
+}
+
+@media(max-width:390px){
+   .footer-contact{
+    display: flex;
+    flex-direction: column;
+   }
+}
+
+@media(max-width:250px){
+   
+    .footer-logo h1{
+        font-size: 22px;
+    }
+    .footer-logo img{
+        width: 35px;
+    }
+ }
