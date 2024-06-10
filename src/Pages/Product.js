@@ -71,8 +71,8 @@ const Product = () => {
               </section>
   
               <section className='product-price'>
-                <p1>R${product.old_price.toFixed(2)}</p1>
-                <p1>R${product.new_price.toFixed(2)}</p1>
+                <p1>R${Number(product.old_price).toFixed(2)}</p1>
+                <p1>R${Number(product.new_price).toFixed(2)}</p1>
               </section>
               <p1>{product.description}</p1>
             </div>
