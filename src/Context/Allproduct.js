@@ -109,7 +109,9 @@ export function ShopProvider(props){
             count += cartItems[index].quant;
             if(cartItems[index].quant > 0){
                 let product = allproduct.find((product)=>product.id === cartItems[index].id)
-                total += ((product.new_price) * cartItems[index].quant) 
+                if (product) {
+                    total += (product.new_price * cartItems[index].quant);
+                }
              }
         }
         setTotalCount(count);
